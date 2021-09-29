@@ -2,6 +2,15 @@
 
 ## How i print the value of /dev/stdin, /dev/stdout and /dev/stderr.?
 
+> nano myscript.sh
+```
+#!/bin/bash
+echo your stdin is : $(</dev/stdin)
+
+```
+> chmod +z myscript.sh
+
+> $ ls | ./myscript.sh
 
 ## Reference
 * https://stackoverflow.com/questions/43949166/reading-value-of-stdout-and-stderr
